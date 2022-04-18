@@ -1,0 +1,51 @@
+.whyPremium {
+    height: 450px;
+    .container {
+        h1 {
+            text-align: center;
+            margin: 50px 0;
+            font-size: 40px;
+            font-weight: 900;
+        }
+        ul {
+            display: flex;
+            justify-content: space-around;
+            li {
+                img {
+                    width: 142px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    .whyPremium{
+        height: min-content;
+        .container{
+            width: 100vw !important;
+            h1{
+                font-size: 28px !important;
+                font-weight: 900 !important;
+                line-height: 32px !important;
+            }
+            ul{
+                flex-direction: column;
+                margin-left: 20px;
+                li{
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 0;
+                    .content{
+                        margin-left: 10px;
+                        &:first-child{
+                            font-size: 21px !important;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

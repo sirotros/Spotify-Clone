@@ -1,0 +1,127 @@
+.pick-premium {
+    height: 947px;
+    background-color: #efefef;
+    .container {
+        h1 {
+            text-align: center;
+            padding: 60px 0 5px;
+        }
+        .pick-title {
+            text-align: center;
+            margin-top: 10px;
+            line-height: 20px;
+        }
+        .logos {
+            text-align: center;
+            .bankIcon {
+                width: 20px;
+                margin: 15px 5px 0;
+            }
+        }
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            height: 634px;
+            margin-top: 50px;
+            .card {
+                position: relative;
+                padding: 16px;
+                width: 270px;
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px 0px;
+                border-radius: 10px;
+                background: #fff;
+                .promotion {
+                    background-color: #2e77d0;
+                    height: 18px;
+                    width: max-content;
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding: 12px 12px;
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    color: #fff;
+                }
+                .title {
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    margin-top: 5px;
+                }
+                .price {
+                    font-weight: 400;
+                    list-style: 22px;
+                    margin-top: 5px;
+                }
+                .account {
+                    font-weight: 400;
+                    margin: 5px 0;
+                    padding: 2px 0;
+                }
+                .border {
+                    width: 90%;
+                    height: 2px;
+                    margin: auto;
+                    background: #000;
+                }
+                .featurs {
+                    .featur {
+                        display: flex;
+                        align-items: center;
+                        line-height: 22px;
+                        margin: 10px 0;
+                        .icon {
+                            font-size: 30px;
+                        }
+                    }
+                }
+                .btn {
+                    background: #000;
+                    color: #fff;
+                    border-radius: 500px;
+                    font-size: 14px;
+                    font-weight: 700px;
+                    cursor: pointer;
+                    line-height: 20px;
+                    padding: 14px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 240px;
+                    position: absolute;
+                    top: 430px;
+                }
+                p {
+                    font-size: 12px;
+                    font-weight: 400px;
+                    line-height: 16px;
+                    position: absolute;
+                    top: 500px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pick-premium {
+        height: 2100px;
+        .container {
+            width: 100vw;
+            .cards{
+                flex-direction: column;
+                align-items: center;
+                margin-top: 150px;
+                .card{
+                    position: relative;
+                    height: 600px !important;
+                    background: #fff;
+                    .btn{
+                        z-index: 999;
+                    }
+                }
+            }
+        }
+    }
+}

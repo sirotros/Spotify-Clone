@@ -1,0 +1,30 @@
+.bring {
+    height: 300px;
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+            padding: 80px 0 10px;
+        }
+        p {
+            padding: 10px 0 20px;
+        }
+        .companies {
+            display: flex;
+            flex-direction: row;
+            .company {
+                width: 100px;
+                height: 60px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .bring {
+        .container {
+            width: 100vw !important;
+            text-align: center;
+        }
+    }
+}

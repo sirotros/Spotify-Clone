@@ -1,0 +1,118 @@
+header {
+    height: 80px;
+    width: 100vw;
+    background-color: #000;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            width: 132px;
+            height: 42px;
+        }
+        .menu {
+            display: none;
+        }
+        .header-list {
+            display: flex;
+            align-items: center;
+            .border {
+                height: 16px;
+                width: 1px;
+                background-color: #fff;
+                margin: 32px 17px;
+            }
+            .header-item {
+                padding: 28px 17px;
+                font-size: 16px;
+
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        .container {
+            .logo {
+                margin: 15px 20px;
+
+                img {
+                    width: 100px;
+                }
+            }
+            .menu {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+                margin-right: 20px;
+                span {
+                    width: 20px;
+                    margin: 1.5px 0;
+                    height: 2px;
+                    background: #fff;
+                    transition: 1s all ease;
+                }
+                z-index: 99999;
+            }
+            .menu.open {
+                
+                span {
+                    &:nth-child(1) {
+                        transform: rotate(45deg);
+                    }
+                    &:nth-child(3) {
+                        transform: translate(0px, -5px) rotate(-45deg);
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                }
+            }
+            .menu.open + .header-list{
+                display: flex;
+            }
+            .header-list {
+                transition: 1s all ease;
+
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                background: #000;
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 90%;
+                .border{
+                    width: 35px;
+                    height: 2px;
+                    margin-left: 30px;
+                }
+                .header-item{
+                    
+                    margin: -15px 10px 0;
+                    &:nth-child(-n+3){
+                        a{
+                            font-size: 36px;
+                            font-weight: 700;
+                        }
+                    }
+                    &:nth-child(1){
+                        padding-top: 70px;
+                    }
+                    &:nth-child(n+2){
+                        font-size: 28px;
+                        color: #D9DADC;
+                    }
+                }
+            }
+        }
+    }
+}

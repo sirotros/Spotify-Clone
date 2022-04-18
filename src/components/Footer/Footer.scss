@@ -1,0 +1,111 @@
+footer {
+    background: #111;
+    height: 500px;
+    .footer-logo {
+        width: 130px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        color: #fff;
+        padding: 90px 0;
+        div {
+            h1 {
+                color: grey;
+                font-size: 1rem;
+            }
+            ul {
+                li {
+                    margin: 10px 0;
+                }
+            }
+        }
+        .social-media {
+            padding-left: 75px;
+            a {
+                color: #fff;
+                .icon {
+                    font-size: 25px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    .footer-lowers {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 100px;
+        .footer-lower {
+            display: flex;
+            a {
+                color: grey;
+                margin: 0 10px;
+            }
+        }
+        .info {
+            color: grey;
+            position: relative;
+            bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        width: 100vw !important;
+        height: 1130px !important;
+        background: #000 !important;
+        position: relative;
+
+        .footer-logo {
+            position: relative;
+            top: -10px;
+            left: 20px;
+            width: 100px;
+        }
+        nav {
+            position: relative;
+            top: -40px;
+            flex-direction: column;
+            div {
+                
+                margin: 40px 0 0 20px;
+                ul{
+                    li{
+                        margin: 20px 0;
+                    }
+                }
+            }
+            .social-media{
+                position: absolute;
+                bottom: 0px;
+                left: -70px;
+            }
+        }
+        .footer-lowers{
+            position: relative;
+            bottom: 50px;
+            left: 0px;
+            width: 100vw;
+            font-size: 10px;
+            .footer-lower{
+                display: flex;
+                flex-wrap: wrap;
+                width: 75vw;
+                li{
+                    margin: 5px 10px;
+                }
+            }
+            .info{
+                position: absolute;
+                right: 20px;
+                bottom: 5px;       
+                text-align: end;
+                div{
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}

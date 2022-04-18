@@ -1,0 +1,29 @@
+.link {
+    background: #19e68c;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 300px;
+        width: 100%;
+
+        .laptop {
+            width: 136px;
+            height: 80px;
+        }
+        .btn {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            background: #fff;
+            padding: 10px 34px;
+            border-radius: 500px;
+            color: #000;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.visit {
+    height: 300px;
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        text-align: center;
+        padding: 50px 0 15px;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        max-width: 480px;
+        text-align: center;
+        padding: 20px 0 40px;
+        margin: auto;
+    }
+    .btn {
+        height: 48px;
+        width: 150px;
+        background-color: #1ed760;
+        color: #000;
+        border-radius: 500px;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 14px 32px;
+        margin-left: 500px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .visit {
+        .container {
+            width: 100vw !important;
+            h1{
+                font-size: 32px !important;
+                font-size: 700;
+                line-height: 36px;
+                letter-spacing: -1,28px;
+            }
+            p{
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+            .btn {
+                margin-left: 170px;
+            }
+        }
+    }
+}

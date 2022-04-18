@@ -1,0 +1,35 @@
+.category {
+    background: #eeeeee;
+    .container {
+        padding: 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        ul {
+            width: 298px;
+            h1 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 28px;
+                .down {
+                    display: none;
+                }
+            }
+            li {
+                color: #117a37;
+                font-size: 18px;
+                font-weight: 700;
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .category {
+        .container {
+            width: 100vw !important;
+            text-align: center;
+        }
+    }
+}
