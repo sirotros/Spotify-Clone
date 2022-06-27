@@ -1,17 +1,26 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: Circular, spotify-circular, Helvetica, Arial, sans-serif;
-    outline: none;
-    border: none;
-    background: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Circular, spotify-circular, Helvetica, Arial, sans-serif;
+  outline: none;
+  border: none;
+  background: none;
+}
+:root {
+  --doc-height: 100%;
 }
 
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh; /* fallback for Js load */
+  height: var(--doc-height);
+}
 .container {
-    width: 1170px;
-    margin: auto;
+  width: 1170px;
+  margin: auto;
 }
-

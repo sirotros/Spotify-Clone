@@ -7,6 +7,7 @@ import DownloadPage from "./pages/DownloadPage";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from './pages/SignUpPage'
 function App() {
+  
   return (
     <BrowserRouter>
       <Routes>

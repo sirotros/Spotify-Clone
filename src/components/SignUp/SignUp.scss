@@ -1,222 +1,221 @@
 .container {
-    .spotify-logo {
-        width: 100px;
-        margin: 50px 50%;
-        transform: translate(-50%, 0);
+  .spotify-logo {
+    width: 100px;
+    margin: 50px 50%;
+    transform: translate(-50%, 0);
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -1px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .btn-facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #405a93;
+    color: #fff;
+    border-radius: 500px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    width: 394px;
+    height: 45px;
+    margin: 20px 50%;
+    transform: translate(-50%, 0);
+    .facebook-icon {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      padding-right: 15px;
     }
-    h2 {
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 36px;
-        letter-spacing: -1px;
-        text-align: center;
-        padding-bottom: 10px;
+  }
+  .btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 500px;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    width: 394px;
+    height: 45px;
+    margin: 10px 50% 20px;
+    transform: translate(-50%, 0);
+    .google-icon {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      padding-right: 15px;
     }
-    .btn-facebook {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #405a93;
-        color: #fff;
-        border-radius: 500px;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 20px;
-        width: 394px;
-        height: 45px;
-        margin: 20px 50%;
-        transform: translate(-50%, 0);
-        .facebook-icon {
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            padding-right: 15px;
-        }
+  }
+  .or {
+    margin: 0 50%;
+    position: relative;
+    &::after {
+      content: "";
+      width: 160px;
+      height: 1px;
+      background: rgba(0, 0, 0, 0.3);
+      left: 30px;
+      top: 9px;
+      position: absolute;
     }
-    .btn-google {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 500px;
-        border: 2px solid black;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 20px;
-        width: 394px;
-        height: 45px;
-        margin: 10px 50% 20px;
-        transform: translate(-50%, 0);
-        .google-icon {
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            padding-right: 15px;
-        }
+    &::before {
+      content: "";
+      width: 160px;
+      height: 1px;
+      background: rgba(0, 0, 0, 0.3);
+      right: 10px;
+      top: 9px;
+      position: absolute;
     }
-    .or {
-        margin: 0 50%;
-        position: relative;
-        &::after {
-            content: "";
-            width: 160px;
-            height: 1px;
-            background: rgba(0, 0, 0, 0.3);
-            left: 30px;
-            top: 9px;
-            position: absolute;
-        }
-        &::before {
-            content: "";
-            width: 160px;
-            height: 1px;
-            background: rgba(0, 0, 0, 0.3);
-            right: 10px;
-            top: 9px;
-            position: absolute;
-        }
+  }
+  h5 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    padding-bottom: 10px;
+  }
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-left: 350px;
+    label {
+      font-size: 14px;
+      font-weight: 700;
+      margin: 10px 0;
     }
-    h5 {
-        text-align: center;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 26px;
-        padding-bottom: 10px;
+    input {
+      width: 450px;
+      height: 52px;
+      border: 1px solid black;
+      border-radius: 4px;
+      padding: 14px;
+      line-height: 24px;
+      margin-bottom: 10px;
     }
-    .input-group {
+    .info {
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .date {
+      margin-top: 20px;
+      margin-bottom: 0;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .calender {
+      margin: 20px 0;
+      display: flex;
+      justify-content: space-around;
+      width: 450px;
+      div {
         display: flex;
         flex-direction: column;
-        margin-left: 350px;
-        label {
-            font-size: 14px;
-            font-weight: 700;
-            margin: 10px 0;
-        }
         input {
-            width: 450px;
-            height: 52px;
-            border: 1px solid black;
-            border-radius: 4px;
-            padding: 14px;
-            line-height: 24px;
-            margin-bottom: 10px;
+          width: 100px;
         }
-        .info {
-            font-size: 14px;
-            font-weight: 400;
+        #monthLabel {
+          margin: 0;
+          position: relative;
+          top: 10px;
         }
-        .date {
-            margin-top: 20px;
-            margin-bottom: 0;
-            font-size: 16px;
-            font-weight: 700;
-        }
-        .calender {
-            margin: 20px 0;
-            display: flex;
-            justify-content: space-around;
-            width: 450px;
-            div {
-                display: flex;
-                flex-direction: column;
-                input {
-                    width: 100px;
-                }
-                #monthLabel {
-                    margin: 0;
-                    position: relative;
-                    top: 10px;
-                }
-                select {
-                    position: relative;
-                    bottom: 9px;
-                    width: 190px;
-                    border: 1px solid black;
-                    padding: 15px;
-                    margin-top: 30px;
+        select {
+          position: relative;
+          bottom: 9px;
+          width: 190px;
+          border: 1px solid black;
+          padding: 15px;
+          margin-top: 30px;
 
-                    option {
-                        font-size: 16px;
-                        font-weight: 400;
-                    }
-                }
-            }
+          option {
+            font-size: 16px;
+            font-weight: 400;
+          }
         }
-        .gender {
-            display: flex;
-            .genderOption {
-                display: flex;
-                align-items: center;
-                margin: 0 15px;
-                height: 50px;
-                input {
-                    width: 17px;
-                }
-                label {
-                    position: relative;
-                    bottom: 5px;
-                    left: 10px;
-                }
-            }
-        }
+      }
     }
-    .share {
+    .gender {
+      display: flex;
+      .genderOption {
         display: flex;
-        flex-direction: row;
         align-items: center;
-        // position: relative;
+        margin: 0 15px;
+        height: 50px;
         input {
-            width: 20px;
+          width: 17px;
         }
-        #shareInfo {
-            margin: 0 0 10px 10px;
-            width: 440px;
-            font-size: 14px;
-            font-weight: 400;
+        label {
+          position: relative;
+          bottom: 5px;
+          left: 10px;
         }
+      }
     }
-    .form-footer {
-        width: 450px;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 16px;
-        letter-spacing: 0.25;
-        p {
-            margin: 10px 0;
-        }
-        a {
-            color: green;
-            border-bottom: 1px solid green;
-        }
-        .btn {
-            background-color: #1ed760;
-            color: #000;
-            border-radius: 500px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: 700;
-            height: 56px;
-            width: 150px;
-            margin: 20px 0;
-        }
-        .account {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            a {
-                font-size: 16px;
-            }
-        }
+  }
+  .share {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    input {
+      width: 20px;
     }
+    #shareInfo {
+      margin: 0 0 10px 10px;
+      width: 440px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  .form-footer {
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.25;
+    p {
+      margin: 10px 0;
+    }
+    a {
+      color: green;
+      border-bottom: 1px solid green;
+    }
+    .btn {
+      background-color: #1ed760;
+      color: #000;
+      border-radius: 500px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 700;
+      height: 56px;
+      width: 150px;
+      margin: 20px 0;
+    }
+    .account {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      a {
+        font-size: 16px;
+      }
+    }
+  }
 }
-@media screen and (max-width: 480px){
-    .container {
-        width: 100vw;
-        .input-group{
-            margin-left:20px;
-        }
+@media screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+    .input-group {
+      margin-left: 20px;
     }
+  }
 }

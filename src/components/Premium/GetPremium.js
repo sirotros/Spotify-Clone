@@ -6,7 +6,7 @@ function GetPremium() {
   return (
     <div className="premium">
       <div className="container">
-        <div className="content">
+        <div className="content-wrapper">
           <p className="title">Get 3 months of Premium for free</p>
           <p className="content">
             Enjoy ad-free music listening, offline playback, and more. Cancel

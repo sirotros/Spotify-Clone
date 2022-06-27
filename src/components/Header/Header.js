@@ -1,22 +1,25 @@
-import React , {useState} from "react";
+import { useState, useRef } from "react";
 import { Link, Outlet } from "react-router-dom";
 import "./header.scss";
 import logo from "../../img/logo.svg";
 function Header() {
-  const [opening,setOpening] = useState(false)
-  function menuOpen (){
-    setOpening(!opening)
-    if(opening){
-      document.querySelector('.menu').classList.add('open')
-    }else{
-      document.querySelector('.menu').classList.remove('open')
+  const [opening, setOpening] = useState(false);
+  const menuRef = useRef(null);
+  function menuOpen() {
+    setOpening(!opening);
+    if (opening) {
+      menuRef.current.classList.add("open");
+    } else {
+      menuRef.current.classList.remove("open");
     }
   }
   return (
     <header>
       <div className="container">
-        <a href="/" className="logo"><img src={logo} alt="Spotify Logo" /></a>
-        <div className="menu" onClick={menuOpen}>
+        <a href="/" className="logo">
+          <img src={logo} alt="Spotify Logo" />
+        </a>
+        <div className="menu" ref={menuRef} onClick={menuOpen}>
           <span></span>
           <span></span>
           <span></span>
@@ -40,7 +43,7 @@ function Header() {
           </li>
         </ul>
       </div>
-      <Outlet/>
+      <Outlet />
     </header>
   );
 }

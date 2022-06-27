@@ -71,7 +71,7 @@ function SignUp() {
         <span className="info"> This appears on your profile.</span>
       </div>
       <div className="input-group">
-        <h62 className="date">What's your date of birth?</h62>
+        <h6 className="date">What's your date of birth?</h6>
         <div className="calender">
           <div className="month">
             <label htmlFor="month" id="monthLabel">
