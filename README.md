@@ -1,3 +1,6 @@
+
+## You can view the site here : [Click Me](https://spotify-website-clone.vercel.app/)
+
 # How to run this projects
 
 First clone this repository.
