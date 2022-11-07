@@ -213,9 +213,35 @@
 }
 @media screen and (max-width: 480px) {
   .container {
-    width: 480px;
+    width: 100vw;
+    .btn-facebook,
+    .btn-google {
+      width: 80vw;
+    }
+
     .input-group {
       margin-left: 20px;
+      input {
+        width: 90vw;
+      }
+      .calender {
+        flex-direction: column;
+        div {
+          input,
+          select {
+            width: 90vw;
+          }
+        }
+      }
+      &.share {
+        #share {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .form-footer{
+      width: 90vw;
     }
   }
 }

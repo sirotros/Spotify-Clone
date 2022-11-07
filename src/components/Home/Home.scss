@@ -104,28 +104,30 @@
         width: 100vw !important;
         .premium-title {
           width: 100vw;
-          font-size: 10px;
+          font-size: 14px !important;
           line-height: 16px;
           letter-spacing: 1px;
           text-align: center;
-          padding: 30px 0;
+          padding: 20px 0;
         }
         .premium-sub-title {
           font-size: 32px !important;
           line-height: 38px !important;
           font-weight: 900 !important;
-          width: 100vw;
+          width: 98vw;
           margin: 0 10px;
+          text-align: center;
         }
         .premium-content {
-          font-size: 18px !important;
+          font-size: 17px !important;
           font-weight: 400;
-          width: 95vw;
+          width: 98vw;
           margin: 0 10px;
           padding-bottom: 10px;
+          text-align: center;
         }
         .btn {
-          width: 450px !important;
+          width: 370px !important;
           margin: 10px 10px !important;
         }
         .premium-sub-content {
@@ -165,10 +167,11 @@
         line-height: 27px;
         letter-spacing: 0.25px;
         text-align: center;
+        padding: 0 10px;
       }
       .btn {
         position: relative;
-        left: 30%;
+        left: 23%;
       }
     }
   }

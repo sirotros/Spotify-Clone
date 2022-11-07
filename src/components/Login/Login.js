@@ -38,7 +38,7 @@ function Login() {
           <label htmlFor="password">Password</label>
           <input type="text" placeholder="Password" />
         </div>
-        <a href="#" className="forgot">
+        <a href="#" className="forget">
           Forgot your password?
         </a>
         <div className="form-footer">

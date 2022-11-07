@@ -120,12 +120,12 @@ function SignUp() {
       </div>
       <div className="form-footer">
         <p>
-          By clicking on sign-up, you agree to Spotify's{" "}
+          By clicking on sign-up, you agree to Spotify's
           <a href="#">Terms and Conditions of Use.</a>
         </p>
         <p>
           To learn more about how Spotify collects, uses, shares and protects
-          your personal data, please see{" "}
+          your personal data, please see
           <a href="#">Spotify's Privacy Policy.</a>
         </p>
         <button className="btn">Sign up</button>

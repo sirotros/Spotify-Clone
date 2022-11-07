@@ -1,163 +1,190 @@
 .login {
-    .logo {
-        width: 182px;
-        height: 52px;
-        margin: 30px 50%;
-        transform: translate(-50%, 0);
+  .logo {
+    width: 182px;
+    height: 52px;
+    margin: 30px 50%;
+    transform: translate(-50%, 0);
+  }
+  .borderHeader {
+    width: 100vw;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .loginToContinue {
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 220px;
+    .btnFacebook {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 450px;
+      height: 50px;
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 500px;
+      background: #3b5998;
+      color: #fff;
     }
-    .borderHeader {
-        width: 100vw;
-        height: 1px;
-        background-color: rgba(0, 0, 0, 0.2);
+    .icon {
+      width: 25px;
+      height: 25px;
+      margin-right: 15px;
     }
-    .loginToContinue {
+    .btnApple {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 450px;
+      height: 50px;
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 500px;
+      background: black;
+      color: #fff;
+    }
+    .btnGoogle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 450px;
+      height: 48px;
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 500px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+  }
+  .or {
+    margin: 10px 50%;
+    position: relative;
+    &::after {
+      content: "";
+      width: 180px;
+      height: 1px;
+      background: rgba(0, 0, 0, 0.3);
+      left: 30px;
+      top: 9px;
+      position: absolute;
+    }
+    &::before {
+      content: "";
+      width: 180px;
+      height: 1px;
+      background: rgba(0, 0, 0, 0.3);
+      right: 10px;
+      top: 9px;
+      position: absolute;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 450px;
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      label {
+        text-align: start;
         font-size: 14px;
-        font-weight: 900;
-        line-height: 20px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
+        font-weight: 700;
+        margin: 15px 0 7px;
+      }
+      input {
+        width: 450px;
+        height: 52px;
+        padding: 14px;
+        font-size: 16px;
+        cursor: text;
+        box-shadow: rgb(135, 135, 135) 0px 0px 0px 1px;
+        border-radius: 4px;
+        line-height: 24px;
+      }
     }
+    .forget {
+      color: #000;
+      margin-top: 20px;
+    }
+    .form-footer {
+      width: 450px;
+      display: flex;
+      justify-content: space-between;
+      .remember {
+        #remember {
+          margin: 10px 5px;
+        }
+      }
+      .btn {
+        background-color: #1ed760;
+        color: #000;
+        border-radius: 500px;
+        font-size: 14px;
+        font-weight: 700;
+        height: 40px;
+        width: 120px;
+      }
+    }
+  }
+  .border {
+    width: 448px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 55px auto;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+  }
+  .btnFor {
+    border-radius: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 450px;
+    height: 48px;
+    margin: 0 50%;
+    transform: translate(-50%, 0);
+  }
+}
+@media screen and (max-width: 480px) {
+  .login {
+    width: 100vw;
     .buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        height: 220px;
-        .btnFacebook {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 450px;
-            height: 50px;
-            font-weight: 700;
-            font-size: 14px;
-            border-radius: 500px;
-            background: #3b5998;
-            color: #fff;
-        }
-        .icon {
-            width: 25px;
-            height: 25px;
-            margin-right: 15px;
-        }
-        .btnApple {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 450px;
-            height: 50px;
-            font-weight: 700;
-            font-size: 14px;
-            border-radius: 500px;
-            background: black;
-            color: #fff;
-        }
-        .btnGoogle {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 450px;
-            height: 48px;
-            font-weight: 700;
-            font-size: 14px;
-            border-radius: 500px;
-            border: 1px solid rgba(0, 0, 0, 0.5);
-        }
+      .btnFacebook,
+      .btnApple,
+      .btnGoogle {
+        width: 90vw;
+      }
     }
-    .or {
-        margin: 10px 50%;
-        position: relative;
-        &::after {
-            content: "";
-            width: 180px;
-            height: 1px;
-            background: rgba(0, 0, 0, 0.3);
-            left: 30px;
-            top: 9px;
-            position: absolute;
-        }
-        &::before {
-            content: "";
-            width: 180px;
-            height: 1px;
-            background: rgba(0, 0, 0, 0.3);
-            right: 10px;
-            top: 9px;
-            position: absolute;
-        }
+    .forget {
+      margin-left: 40px;
     }
     form {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        width: 450px;
-        .input-group {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            label {
-                text-align: start;
-                font-size: 14px;
-                font-weight: 700;
-                margin: 15px 0 7px;
-            }
-            input {
-                width: 450px;
-                height: 52px;
-                padding: 14px;
-                font-size: 16px;
-                cursor: text;
-                box-shadow: rgb(135, 135, 135) 0px 0px 0px 1px;
-                border-radius: 4px;
-                line-height: 24px;
-            }
+      .input-group {
+        width: 100vw;
+        input {
+          width: 90vw;
         }
-        .forgot {
-            color: #000;
-            margin-top: 20px;
-        }
-        .form-footer {
-            width: 450px;
-            display: flex;
-            justify-content: space-between;
-            .remember {
-                #remember {
-                    margin: 10px 5px;
-                }
-            }
-            .btn {
-                background-color: #1ed760;
-                color: #000;
-                border-radius: 500px;
-                font-size: 14px;
-                font-weight: 700;
-                height: 40px;
-                width: 120px;
-            }
-        }
+      }
+      .form-footer {
+        width: 90vw;
+        margin: 5px 20px;
+      }
     }
-    .border {
-        width: 448px;
-        height: 1px;
-        background: rgba(0, 0, 0, 0.2);
-        margin: 55px auto;
-    }
-    p {
-        font-size: 18px;
-        font-weight: 900;
-        line-height: 24px;
-        text-align: center;
-        position: relative;
-        bottom: 30px;
-    }
-    .btnFor {
-        border-radius: 500px;
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        width: 450px;
-        height: 48px;
-        margin: 0 50%;
-        transform: translate(-50%, 0);
-    }
+  }
 }
